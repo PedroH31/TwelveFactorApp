@@ -1,0 +1,10 @@
+Index: requirements.txt
+===================================================================
+diff --git a/requirements.txt b/requirements.txt
+--- a/requirements.txt	
++++ b/requirements.txt	
+@@ -1,2 +1,3 @@
+ Django==4.1.6
+ flake8==6.0.0
++gunicorn==20.1.0
+\ No newline at end of file
