@@ -17,7 +17,7 @@ jobs:
     - name: Set up python 3.11.0
       uses: actions/setup-python@v3
       with:
-        python-version: '3.11.0']
+        python-version: '3.11.0'
         cache: pip
 
     - name: rodar a flake8
