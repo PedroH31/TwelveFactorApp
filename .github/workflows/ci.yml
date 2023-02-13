@@ -12,36 +12,20 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     env:
-      DATABASE_URL: postgres://devpro:devpro@localhost:5432/devpro
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up python 3.11.0
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.11.0'
+          cache: pip
 
-      services:
-        postgres:
-          image: postgres
-          env:
-            POSTGRES_PASSWORD: devpro
-            POSTGRES_USER: devpro
-          options: >-
-            --health-cmd pg_isready
-            --health-interval 10s
-            --health-timeout 5s
-            --health-retries 5
-          ports:
-            - 5432:5432
+      - name: Instalar dependências
+        run: |
+          pip install -r requirements.txt
 
-  steps:
-    - uses: actions/checkout@v3
-    - name: Set up python 3.11.0
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.11.0'
-        cache: pip
-
-    - name: Instalar dependências
-      run: |
-        pip install -r requirements.txt
-
-    - name: rodar a flake8
-      uses: py-actions/flake8@v3
-      with:
-      checkName: 'flake8_py3'
+      - name: rodar a flake8
+        uses: py-actions/flake8@v3
+        with:
+        checkName: 'flake8_py3'
 
