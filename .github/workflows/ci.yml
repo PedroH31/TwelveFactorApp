@@ -1,0 +1,26 @@
+name: Integração contínua
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+  steps:
+    - uses: actions/checkout@v3
+    - name: Set up python 3.11.0
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.11.0']
+        cache: pip
+
+    - name: rodar a flake8
+      uses: py-actions/flake8@v3
+      with:
+      checkName: 'flake8_py3'
