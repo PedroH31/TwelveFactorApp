@@ -1,0 +1,120 @@
+Index: Pipfile.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n    \"_meta\": {\n        \"hash\": {\n            \"sha256\": \"c36ae28fea7b9a4cc02145632e2f41469af2e7b38b801903abb8333d3306f36b\"\n        },\n        \"pipfile-spec\": 6,\n        \"requires\": {\n            \"python_version\": \"3.9\"\n        },\n        \"sources\": [\n            {\n                \"name\": \"pypi\",\n                \"url\": \"https://pypi.org/simple\",\n                \"verify_ssl\": true\n            }\n        ]\n    },\n    \"default\": {\n        \"asgiref\": {\n            \"hashes\": [\n                \"sha256:71e68008da809b957b7ee4b43dbccff33d1b23519fb8344e33f049897077afac\",\n                \"sha256:9567dfe7bd8d3c8c892227827c41cce860b368104c3431da67a0c5a65a949506\"\n            ],\n            \"markers\": \"python_version >= '3.7'\",\n            \"version\": \"==3.6.0\"\n        },\n        \"django\": {\n            \"hashes\": [\n                \"sha256:bceb0fe1a386781af0788cae4108622756cd05e7775448deec04a71ddf87685d\",\n                \"sha256:c6fe7ebe7c017fe59f1029821dae0acb5a2ddcd6c9a0138fd20a8bfefac914bc\"\n            ],\n            \"index\": \"pypi\",\n            \"version\": \"==4.1.6\"\n        },\n        \"sqlparse\": {\n            \"hashes\": [\n                \"sha256:0323c0ec29cd52bceabc1b4d9d579e311f3e4961b98d174201d5622a23b85e34\",\n                \"sha256:69ca804846bb114d2ec380e4360a8a340db83f0ccf3afceeb1404df028f57268\"\n            ],\n            \"markers\": \"python_version >= '3.5'\",\n            \"version\": \"==0.4.3\"\n        }\n    },\n    \"develop\": {}\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Pipfile.lock b/Pipfile.lock
+--- a/Pipfile.lock	(revision d01c46678c14f2e7db6e53e05deb08f5488e0b03)
++++ b/Pipfile.lock	(date 1676303728230)
+@@ -1,7 +1,7 @@
+ {
+     "_meta": {
+         "hash": {
+-            "sha256": "c36ae28fea7b9a4cc02145632e2f41469af2e7b38b801903abb8333d3306f36b"
++            "sha256": "703a036465f7b9147264d03e40b696b032874f33174614811b033209290ad073"
+         },
+         "pipfile-spec": 6,
+         "requires": {
+@@ -32,6 +32,54 @@
+             "index": "pypi",
+             "version": "==4.1.6"
+         },
++        "flake8": {
++            "hashes": [
++                "sha256:3833794e27ff64ea4e9cf5d410082a8b97ff1a06c16aa3d2027339cd0f1195c7",
++                "sha256:c61007e76655af75e6785a931f452915b371dc48f56efd765247c8fe68f2b181"
++            ],
++            "index": "pypi",
++            "version": "==6.0.0"
++        },
++        "gunicorn": {
++            "hashes": [
++                "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e",
++                "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"
++            ],
++            "index": "pypi",
++            "version": "==20.1.0"
++        },
++        "mccabe": {
++            "hashes": [
++                "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325",
++                "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"
++            ],
++            "markers": "python_version >= '3.6'",
++            "version": "==0.7.0"
++        },
++        "pycodestyle": {
++            "hashes": [
++                "sha256:347187bdb476329d98f695c213d7295a846d1152ff4fe9bacb8a9590b8ee7053",
++                "sha256:8a4eaf0d0495c7395bdab3589ac2db602797d76207242c17d470186815706610"
++            ],
++            "markers": "python_version >= '3.6'",
++            "version": "==2.10.0"
++        },
++        "pyflakes": {
++            "hashes": [
++                "sha256:ec55bf7fe21fff7f1ad2f7da62363d749e2a470500eab1b555334b67aa1ef8cf",
++                "sha256:ec8b276a6b60bd80defed25add7e439881c19e64850afd9b346283d4165fd0fd"
++            ],
++            "markers": "python_version >= '3.6'",
++            "version": "==3.0.1"
++        },
++        "setuptools": {
++            "hashes": [
++                "sha256:16ccf598aab3b506593c17378473978908a2734d7336755a8769b480906bec1c",
++                "sha256:b440ee5f7e607bb8c9de15259dba2583dd41a38879a7abc1d43a71c59524da48"
++            ],
++            "markers": "python_version >= '3.7'",
++            "version": "==67.2.0"
++        },
+         "sqlparse": {
+             "hashes": [
+                 "sha256:0323c0ec29cd52bceabc1b4d9d579e311f3e4961b98d174201d5622a23b85e34",
+Index: Pipfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[[source]]\nurl = \"https://pypi.org/simple\"\nverify_ssl = true\nname = \"pypi\"\n\n[packages]\ndjango = \"*\"\n\n[dev-packages]\n\n[requires]\npython_version = \"3.9\"\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Pipfile b/Pipfile
+--- a/Pipfile	(revision d01c46678c14f2e7db6e53e05deb08f5488e0b03)
++++ b/Pipfile	(date 1676303729590)
+@@ -5,6 +5,8 @@
+ 
+ [packages]
+ django = "*"
++flake8 = "*"
++gunicorn = "*"
+ 
+ [dev-packages]
+ 
+Index: dozefatores/settings.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nDjango settings for dozefatores project.\n\nGenerated by 'django-admin startproject' using Django 4.1.6.\n\nFor more information on this file, see\nhttps://docs.djangoproject.com/en/4.1/topics/settings/\n\nFor the full list of settings and their values, see\nhttps://docs.djangoproject.com/en/4.1/ref/settings/\n\"\"\"\n\nfrom pathlib import Path\n\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n\n\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-l-*^6!c1*05nyw=u)$2ci*xi*m*5!@crv(zf_uk47ppg0ha_rs'\n\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n\nALLOWED_HOSTS = []\n\n\n# Application definition\n\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\n\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\n\nROOT_URLCONF = 'dozefatores.urls'\n\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',\n            ],\n        },\n    },\n]\n\nWSGI_APPLICATION = 'dozefatores.wsgi.application'\n\n\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\n\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n\n\n# Password validation\n# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators\n\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',\n    },\n]\n\n\n# Internationalization\n# https://docs.djangoproject.com/en/4.1/topics/i18n/\n\nLANGUAGE_CODE = 'en-us'\n\nTIME_ZONE = 'UTC'\n\nUSE_I18N = True\n\nUSE_TZ = True\n\n\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\n\nSTATIC_URL = 'static/'\n\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\n\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dozefatores/settings.py b/dozefatores/settings.py
+--- a/dozefatores/settings.py	(revision d01c46678c14f2e7db6e53e05deb08f5488e0b03)
++++ b/dozefatores/settings.py	(date 1676303729610)
+@@ -25,7 +25,7 @@
+ # SECURITY WARNING: don't run with debug turned on in production!
+ DEBUG = True
+ 
+-ALLOWED_HOSTS = []
++ALLOWED_HOSTS = ['*']
+ 
+ 
+ # Application definition
+@@ -37,6 +37,7 @@
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
++    'dozefatores.base'
+ ]
+ 
+ MIDDLEWARE = [

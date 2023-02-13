@@ -1,0 +1,88 @@
+Index: Pipfile.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Pipfile.lock b/Pipfile.lock
+--- a/Pipfile.lock	
++++ b/Pipfile.lock	
+@@ -1,7 +1,7 @@
+ {
+     "_meta": {
+         "hash": {
+-            "sha256": "d24275df8d04093593235d09e7e67c3e393fbd1e3bd22cdde92ec1abd95d757c"
++            "sha256": "703a036465f7b9147264d03e40b696b032874f33174614811b033209290ad073"
+         },
+         "pipfile-spec": 6,
+         "requires": {
+@@ -40,6 +40,14 @@
+             "index": "pypi",
+             "version": "==6.0.0"
+         },
++        "gunicorn": {
++            "hashes": [
++                "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e",
++                "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"
++            ],
++            "index": "pypi",
++            "version": "==20.1.0"
++        },
+         "mccabe": {
+             "hashes": [
+                 "sha256:348e0240c33b60bbdf4e523192ef919f28cb2c3d7d5c7794f74009290f236325",
+@@ -64,6 +72,14 @@
+             "markers": "python_version >= '3.6'",
+             "version": "==3.0.1"
+         },
++        "setuptools": {
++            "hashes": [
++                "sha256:16ccf598aab3b506593c17378473978908a2734d7336755a8769b480906bec1c",
++                "sha256:b440ee5f7e607bb8c9de15259dba2583dd41a38879a7abc1d43a71c59524da48"
++            ],
++            "markers": "python_version >= '3.7'",
++            "version": "==67.2.0"
++        },
+         "sqlparse": {
+             "hashes": [
+                 "sha256:0323c0ec29cd52bceabc1b4d9d579e311f3e4961b98d174201d5622a23b85e34",
+Index: Pipfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Pipfile b/Pipfile
+--- a/Pipfile	
++++ b/Pipfile	
+@@ -6,6 +6,7 @@
+ [packages]
+ django = "*"
+ flake8 = "*"
++gunicorn = "*"
+ 
+ [dev-packages]
+ 
+Index: dozefatores/settings.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dozefatores/settings.py b/dozefatores/settings.py
+--- a/dozefatores/settings.py	
++++ b/dozefatores/settings.py	
+@@ -25,7 +25,7 @@
+ # SECURITY WARNING: don't run with debug turned on in production!
+ DEBUG = True
+ 
+-ALLOWED_HOSTS = []
++ALLOWED_HOSTS = ['*']
+ 
+ 
+ # Application definition
+@@ -37,6 +37,7 @@
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
++    'dozefatores.base'
+ ]
+ 
+ MIDDLEWARE = [
