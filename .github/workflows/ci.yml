@@ -26,5 +26,5 @@ jobs:
       - name: rodar a flake8
         uses: py-actions/flake8@v3
         with:
-        checkName: 'flake8_py3'
+          checkName: 'flake8_py3'
 
