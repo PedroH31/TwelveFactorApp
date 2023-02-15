@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a43da3e-9f3f-48ad-a92d-4910c822583f" name="Changes" comment="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9" />
+    <list default="true" id="2a43da3e-9f3f-48ad-a92d-4910c822583f" name="Changes" comment="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cd.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
