@@ -7,8 +7,16 @@ name = "pypi"
 django = "*"
 flake8 = "*"
 gunicorn = "*"
+django-s3-folder-storage = "*"
+collectfast = "*"
+dj-database-url = "*"
+pytest-django = "*"
+python-decouple = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
+pytest-cov = "*"
+codecov = "*"
 
 [requires]
 python_version = "3.9"
