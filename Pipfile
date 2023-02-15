@@ -12,6 +12,7 @@ collectfast = "*"
 dj-database-url = "*"
 pytest-django = "*"
 python-decouple = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 pytest-cov = "*"
