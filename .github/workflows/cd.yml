@@ -1,11 +1,7 @@
 name: Deploy
 
 on:
-  workflow_run:
-    workflows:
-      - Integração continua
-    types:
-      - completed
+  push:
     branches:
       - main
 
