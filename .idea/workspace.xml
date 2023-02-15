@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a43da3e-9f3f-48ad-a92d-4910c822583f" name="Changes" comment="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cd.yml" afterDir="false" />
-    </list>
+    <list default="true" id="2a43da3e-9f3f-48ad-a92d-4910c822583f" name="Changes" comment="consertando deploy automático" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -302,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676469449922</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="consertando deploy automático">
+      <created>1676469809130</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1676469809130</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,6 +327,7 @@
     <MESSAGE value="deploy configurado pelo fly.io&#10;&#10;close #4" />
     <MESSAGE value="deploy automático configurado &#10;&#10;close #6" />
     <MESSAGE value="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9" />
-    <option name="LAST_COMMIT_MESSAGE" value="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9" />
+    <MESSAGE value="consertando deploy automático" />
+    <option name="LAST_COMMIT_MESSAGE" value="consertando deploy automático" />
   </component>
 </project>
