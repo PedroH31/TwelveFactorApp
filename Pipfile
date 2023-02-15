@@ -7,11 +7,11 @@ name = "pypi"
 django = "*"
 flake8 = "*"
 gunicorn = "*"
-python-decouple = "*"
 django-s3-folder-storage = "*"
 collectfast = "*"
 dj-database-url = "*"
 pytest-django = "*"
+python-decouple = "*"
 
 [dev-packages]
 pytest-cov = "*"
