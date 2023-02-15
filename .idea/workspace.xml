@@ -260,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676466709088</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9">
+      <created>1676466859000</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466859000</updated>
+    </task>
+    <task id="LOCAL-00028" summary="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9">
+      <created>1676467074002</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676467074002</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

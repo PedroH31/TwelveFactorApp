@@ -49,8 +49,6 @@ jobs:
 
       - name: Rodar testes automáticos
         run: |
-          pip install 
-          pip install --dev pytest-cov codecov
           pytest --cov=dozefatores 
 
       - name: Relatório Coverage
