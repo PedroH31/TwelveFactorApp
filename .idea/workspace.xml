@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a43da3e-9f3f-48ad-a92d-4910c822583f" name="Changes" comment="deploy automático configurado &#10;&#10;close #6">
+    <list default="true" id="2a43da3e-9f3f-48ad-a92d-4910c822583f" name="Changes" comment="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9">
       <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dozefatores/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dozefatores/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676379870149</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9">
+      <created>1676463588997</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1676463588997</updated>
+    </task>
+    <task id="LOCAL-00017" summary="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9">
+      <created>1676463687789</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676463687789</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +216,7 @@
     <MESSAGE value="implementada entrega contínua com o github actions, instalada lib flake8&#10;&#10;close #1, close #2" />
     <MESSAGE value="deploy configurado pelo fly.io&#10;&#10;close #4" />
     <MESSAGE value="deploy automático configurado &#10;&#10;close #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy automático configurado &#10;&#10;close #6" />
+    <MESSAGE value="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9" />
+    <option name="LAST_COMMIT_MESSAGE" value="desacopladas variáveis com o python decouple, configurado envio de arquivos estáticos para o bucket &#10;&#10;close #8, close #9" />
   </component>
 </project>
