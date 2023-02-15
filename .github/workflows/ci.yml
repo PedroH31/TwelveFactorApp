@@ -56,7 +56,5 @@ jobs:
       - name: Relatório Coverage
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          codecov
-          
+
 
