@@ -13,6 +13,7 @@ dj-database-url = "*"
 pytest-django = "*"
 python-decouple = "*"
 psycopg2-binary = "*"
+django-debug-toolbar = "*"
 
 [dev-packages]
 pytest-cov = "*"
