@@ -2,21 +2,21 @@ ARG PYTHON_VERSION=3.10-slim-buster
 
 FROM python:${PYTHON_VERSION}
 
+LABEL org.opencontainers.image.source=https://github.com/PedroH31/TwelveFactorApp
+LABEL org.opencontainers.image.licenses=MIT
+
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-RUN mkdir -p /code
+WORKDIR /app
 
-WORKDIR /code
-
-COPY requirements.txt /tmp/requirements.txt
+COPY requirements.txt ./requirements.txt
 
 RUN set -ex && \
     pip install --upgrade pip && \
-    pip install -r /tmp/requirements.txt && \
-    rm -rf /root/.cache/
+    pip install --no-cache-dir -r requirements.txt
 
-COPY . /code/
+COPY . /app/
 
 # RUN python manage.py collectstatic --noinput
 

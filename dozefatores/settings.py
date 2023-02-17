@@ -34,10 +34,10 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-CSRF_TRUSTED_ORIGINS = ['https://appdozefatores.fly.dev/']
 
 AUTH_USER_MODEL = 'base.User'
 
+CSRF_TRUSTED_ORIGINS = ['https://appdozefatores.fly.dev/', ]
 
 # Application definition
 

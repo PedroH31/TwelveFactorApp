@@ -9,6 +9,7 @@ processes = []
   PORT = "8000"
 
 [experimental]
+  allowed_public_ports = []
   auto_rollback = true
 
 [[services]]
@@ -36,6 +37,9 @@ processes = []
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
+
+[deploy]
+  release_command = "python manage.py migrate --noinput"
 
 [[statics]]
   guest_path = "/app/public"
