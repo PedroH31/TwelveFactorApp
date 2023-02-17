@@ -19,6 +19,7 @@ from django.urls import path, include
 
 from dozefatores.base.views import home
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),

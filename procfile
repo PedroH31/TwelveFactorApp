@@ -1,2 +1,2 @@
 release: python manage.py migrate --noinput
-web: gunicorn dozefatores.wsgi --log-file -
+web: gunicorn sitedevpro.wsgi --log-file -
